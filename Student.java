@@ -15,10 +15,8 @@ public class Student {
         this.address = Address;
     }
 
-    public boolean equals( Object object )
+    public boolean equals( Student student )
     {
-        Student student = ( Student ) object ;
-
         return student.name.equals(this.name) &&  student.address.equals(this.address);
     }
 
