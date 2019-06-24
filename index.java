@@ -2,13 +2,18 @@ public class index {
 
     public static void main(String[] args)
     {
-        StudentList list = new StudentArrayList(2 );
+        Student student1 = new Student("Ahmed");
+        student1.setAddress("1 Main Street");
 
-        for( int i = 0 ; i < 10 ; i++ )
-        {
-            Student student = new Student( "Welcome " + i );
+        // some other code
+        Student student2 = new Student("Ali");
+        student2.setAddress("1 Main Street");
 
-            list.add( student );
+        // more code
+        if (student1.equals(student2)) {
+            System.out.println("student1 is the same as student2");
+        } else {
+            System.out.println("student1 is not the same as student2");
         }
     }
 
